@@ -1,12 +1,13 @@
 <script>
     import {page} from "$app/stores";
+    import {base} from "$app/paths"
 </script>
 <div>
     did styles break
     <nav>
-        <a href="./about" class:active={$page.url.pathname == "./about"}> about</a>
-        <a href="./contact" class:active={$page.url.pathname == "./contact"}> contact</a>
-        <a href="./#" class:active={$page.url.pathname == "./"}> home</a>
+        <a href="./about" class:active={$page.url.pathname == {base}+"/about"}> about</a>
+        <a href="./contact" class:active={$page.url.pathname == {base}+"/contact"}> contact</a>
+        <a href="./#" class:active={$page.url.pathname == {base}+"/"}> home</a>
     </nav>
 </div>
 
