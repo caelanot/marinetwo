@@ -2,7 +2,7 @@
     import {page} from "$app/stores";
 </script>
 <div>
-    hi from navbar
+    did styles break
     <nav>
         <a href="./about" class:active={$page.url.pathname == "./about"}> about</a>
         <a href="./contact" class:active={$page.url.pathname == "./contact"}> contact</a>
@@ -10,7 +10,7 @@
     </nav>
 </div>
 
-{$page.url.pathname}
+{$page.url.pathname} 
 <style lang="scss">
     div{
         background: var(--color--primary);
