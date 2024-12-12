@@ -9,6 +9,8 @@
         <a href="./#" class:active={$page.url.pathname == "./"}> home</a>
     </nav>
 </div>
+
+{$page.url.pathname}
 <style lang="scss">
     div{
         background: var(--color--primary);
