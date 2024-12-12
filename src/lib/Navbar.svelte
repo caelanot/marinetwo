@@ -3,7 +3,7 @@
     import {base} from "$app/paths"
 </script>
 <div>
-    did styles break
+    did styles break part 2
     <nav>
         <a href="./about" class:active={$page.url.pathname == {base}+"/about"}> about</a>
         <a href="./contact" class:active={$page.url.pathname == {base}+"/contact"}> contact</a>
@@ -12,6 +12,7 @@
 </div>
 
 {$page.url.pathname} 
+{base}
 <style lang="scss">
     div{
         background: var(--color--primary);
